@@ -554,32 +554,32 @@ body {
     transition: background-image 0.3s ease; /* Transición suave */
 }
 .gift1 {
-    background-image: url('FCordillera/f1.jpg'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/f1.jpg'); /* Imagen inicial */
 }
 
 .gift1:hover {
-    background-image: url('FCordillera/f4.jpg'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/f4.jpg'); /* Imagen al pasar el cursor */
 }
 .gift2 {
-    background-image: url('FCordillera/4.avif'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/4.avif'); /* Imagen inicial */
 }
 
 .gift2:hover {
-    background-image: url('FCordillera/5.avif'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/5.avif'); /* Imagen al pasar el cursor */
 }
 .gift3 {
-    background-image: url('FCordillera/6.avif'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/6.avif'); /* Imagen inicial */
 }
 
 .gift3:hover {
-    background-image: url('FCordillera/img/7.avif'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/7.avif'); /* Imagen al pasar el cursor */
 }
 .gift4 {
-    background-image: url('FCordillera/img/8.avif'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/8.avif'); /* Imagen inicial */
 }
 
 .gift4:hover {
-    background-image: url('FCordillera/img/9.avif'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/9.avif'); /* Imagen al pasar el cursor */
 }
 /* Knowledge */
 .knowledge {
