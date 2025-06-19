@@ -21,6 +21,6 @@ To run the website locally:
 
    ```bash
    git clone https://github.com/yourusername/cordillera.git
-Open the index.html file in your web browser.
+   Open the index.html file in your web browser.
 
 No additional dependencies or server setup required since this is a static website.
