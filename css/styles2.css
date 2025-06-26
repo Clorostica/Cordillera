@@ -22,7 +22,7 @@ body {
     margin-right: 10px;
     margin-top: 4px;
     fill: #ffffff; 
-    transition: fill 0.3s ease, transform 0.3s ease; /* Aplica la transición */
+    transition: fill 0.3s ease, transform 0.3s ease; 
     cursor: pointer;
 }
 
@@ -43,17 +43,17 @@ body {
     margin-right:20px
   }
 .hero {
-    display: flex; /* Usamos flexbox para alinear los elementos */
+    display: flex; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    height: 100vh;
     display: grid;
     grid-template-rows: 100px 1fr;
     color: #ffffff;
     margin: 0 auto;
     z-index: 99;
-    overflow: hidden; /* Evita contenido desbordado */
+    overflow: hidden; 
 }
 
 .hero::before {
@@ -64,11 +64,11 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/FCordillera/2.jpg');
-    background-size: cover; /* Asegura que la imagen cubra completamente */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); /* Recorte inicial */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); 
 }
 .btnfos-3 {
     color:#fff;
@@ -95,13 +95,13 @@ body {
             transition: all 250ms linear;
   }
   /* Nav */
- /* Estilo para pantallas grandes */
+
 .nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Menú en fila */
-    gap: 40px; /* Espaciado entre enlaces */
+    display: flex; 
+    gap: 40px; 
     align-items: center;
   }
   
@@ -109,8 +109,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Hace que los elementos del menú estén en fila */
-    gap: 40px; /* Espaciado entre los elementos del menú */
+    display: flex; 
+    gap: 40px; 
     align-items: center;
 }
 
@@ -131,38 +131,37 @@ body {
   .nav__links:hover {
     color: #CC2B52;
   }
-  
-  /* Botones para abrir/cerrar el menú */
+
   .abrir-menu,
   .cerrar-menu {
-    display: none; /* Ocultos en pantallas grandes */
+    display: none; 
   }
   
-  /* Estilo para pantallas pequeñas */
+
   @media (max-width: 768px) {
     .nav {
-      flex-direction: column; /* Menú en columna */
+      flex-direction: column; 
       gap: 2rem;
-      position: fixed; /* Ocupa toda la pantalla */
+      position: fixed; 
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #000; /* Fondo oscuro */
-      justify-content: center; /* Centrado vertical */
-      align-items: center; /* Centrado horizontal */
-      opacity: 0; /* Oculto inicialmente */
+      background-color: #000; 
+      justify-content: center; 
+      align-items: center; 
+      opacity: 0; 
       visibility: hidden;
-      z-index: 100; /* Por encima de otros elementos */
+      z-index: 100;
       transition: opacity 0.3s ease, visibility 0.3s ease;
     }
     .nav ul {
-        flex-direction: column; /* Coloca los elementos en columna */
+        flex-direction: column; 
         gap: 80px;
     }
     .nav.active {
       opacity: 1;
-      visibility: visible; /* Mostrar menú */
+      visibility: visible; 
     }
   
     .abrir-menu, .cerrar-menu {
@@ -210,36 +209,36 @@ body {
     padding:13px 30px;
     border-radius:32px;
 }
-/* Productos Best Seller slider */
+
 .swiper-button-next, .swiper-button-prev {
     color: #730A38; 
     transition: color 0.3s ease; 
   }
   .swiper-button-next:hover, .swiper-button-prev:hover {
-    color: #df7c7d !important; /* Color en hover */
+    color: #df7c7d !important; 
   }
   
   .swiper-pagination-bullet {
-    background-color: #df7c7d; /* Color base */
-    width: 12px; /* Tamaño del punto */
+    background-color: #df7c7d; 
+    width: 12px; 
     height: 12px;
-    opacity: 1; /* Asegura que sean visibles */
-    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+    opacity: 1; 
+    transition: background-color 0.3s ease; 
   }
   
   .swiper-pagination-bullet:hover {
-    background-color: #730A38; /* Color en hover */
+    background-color: #730A38; 
   }
   
   .swiper-pagination-bullet-active {
-    background-color: #df7c7d; /* Mantén el color base para el punto activo */
+    background-color: #df7c7d; 
   }
   
 .slider {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Asegura que los elementos se acomoden en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .slider-txt {
@@ -250,13 +249,13 @@ body {
 .slider-img {
     flex: 1 1 50%;
     padding-right: 50px;
-    text-align: center; /* Centrar la imagen */
+    text-align: center; 
 }
 
 .slider-img img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Opcional: bordes redondeados */
+    border-radius: 8px; 
 }
 
 .botones {
@@ -278,33 +277,32 @@ body {
     background-color: #e85c50;
 }
 
-/* Media Queries para pantallas más pequeñas */
 @media (max-width: 768px) {
     .slider {
-        flex-direction: column; /* Cambia el diseño a vertical */
+        flex-direction: column; 
     }
 
     .slider-txt, .slider-img {
-        flex: 1 1 100%; /* Ambos ocupan el 100% del ancho */
+        flex: 1 1 100%; 
         text-align: center;
     }
     .slider-img {
-        padding-right: 0; /* Elimina el padding en dispositivos móviles */
+        padding-right: 0;
     }
 
     .botones {
-        flex-direction: column; /* Los botones se apilan */
+        flex-direction: column; /
         gap: 8px;
     }
 }
 
 @media (max-width: 480px) {
     .hero__title{
-        font-size: 1.5rem; /* Ajusta el tamaño del título */
+        font-size: 1.5rem; 
     }
 
     .btn-1 {
-        font-size: 0.875rem; /* Botones más pequeños */
+        font-size: 0.875rem; 
         padding: 8px;
     }
 }
@@ -350,31 +348,30 @@ body {
 }
 
 .contenedor {
-    display: flex; /* Utiliza flexbox para organizar los elementos */
-    flex-direction: column; /* Coloca los elementos en una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Asegura que estén alineados verticalmente */
-    width: 100%; /* Asegura que ocupe todo el espacio disponible */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
 }
 
 .item.price {
-    margin-bottom: 10px; /* Espacio entre el precio y las estrellas */
-    font-size: 24px; /* Tamaño del precio */
+    margin-bottom: 10px; 
+    font-size: 24px;
     font-weight: bold;
 }
 
 .stars {
-    display: flex; /* Alinea las estrellas en línea */
-    justify-content: center; /* Centra las estrellas horizontalmente */
+    display: flex;
+    justify-content: center; 
 }
 
 .star {
-    color: gold; /* Color de las estrellas */
-    font-size: 18px; /* Tamaño de las estrellas */
+    color: gold; 
+    font-size: 18px; 
 }
 
 
-/* Estilo de los artículos */
 .section_2 .subtitle {
     text-align: left;
     font-size: 2rem;
@@ -403,10 +400,9 @@ body {
     background: #740938;
 }
 
-/* Estilo de los artículos */
 .about__main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 2rem;
 }
 
@@ -481,21 +477,21 @@ body {
 }
 
 /* Responsividad */
-@media (max-width: 1024px) { /* Tablets */
+@media (max-width: 1024px) { 
     .about__main {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-@media (max-width: 768px) { /* Smartphones grandes */
+@media (max-width: 768px) { 
     .about__main {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media (max-width: 480px) { /* Smartphones pequeños */
+@media (max-width: 480px) { 
     .about__main {
-        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+        grid-template-columns: 1fr; 
     }
 
     .contenedor {
@@ -512,10 +508,10 @@ body {
 .section_3{
     height: 500px;
     width: 100%;
-    background-image: url('/img/1.jpg'); /* Especifica la ruta de la imagen */
-    background-size: cover; /* La imagen cubrirá todo el área del elemento */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('/img/1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 /* Knowledge */
 
@@ -528,8 +524,8 @@ body {
 }
 
 .knowledge__container{
-    grid-template-columns: 1fr; /* Una sola columna */
-    grid-template-rows: repeat(4, 1fr); /* Cuatro filas de igual altura */
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(4, 1fr);
     gap: 2em;
     align-items: center;
 }
@@ -552,35 +548,35 @@ body {
     height: 300px; 
     background-size: cover;
     background-position: center;
-    transition: background-image 0.3s ease; /* Transición suave */
+    transition: background-image 0.3s ease; 
 }
 .gift1 {
-    background-image: url('https://clorostica.github.io/FCordillera/f1.jpg'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/f1.jpg'); 
 }
 
 .gift1:hover {
-    background-image: url('https://clorostica.github.io/FCordillera/f4.jpg'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/f4.jpg'); 
 }
 .gift2 {
-    background-image: url('https://clorostica.github.io/FCordillera/4.avif'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/4.avif'); 
 }
 
 .gift2:hover {
-    background-image: url('https://clorostica.github.io/FCordillera/5.avif'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/5.avif'); 
 }
 .gift3 {
-    background-image: url('https://clorostica.github.io/FCordillera/6.avif'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/6.avif'); 
 }
 
 .gift3:hover {
-    background-image: url('https://clorostica.github.io/FCordillera/7.avif'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/7.avif');
 }
 .gift4 {
-    background-image: url('https://clorostica.github.io/FCordillera/8.avif'); /* Imagen inicial */
+    background-image: url('https://clorostica.github.io/FCordillera/8.avif');
 }
 
 .gift4:hover {
-    background-image: url('https://clorostica.github.io/FCordillera/9.avif'); /* Imagen al pasar el cursor */
+    background-image: url('https://clorostica.github.io/FCordillera/9.avif'); 
 }
 /* Knowledge */
 .knowledge {
@@ -617,21 +613,21 @@ body {
     margin-top: 10px;
     margin-bottom: 30px;
     display: none;
-    transition: all 0.3s ease-in-out; /* Transición suave */
+    transition: all 0.3s ease-in-out; 
 }
 
-/* Cuando se hace clic, la respuesta se muestra */
+
 .questions__answer.active .questions__show {
-    display: block; /* Mostrar la respuesta */
+    display: block; 
 }
 
-/* Flechas (opcional) */
+
 .questions__arrow {
     transition: transform 0.3s ease-in-out;
 }
 
 .questions__answer.active .questions__arrow {
-    transform: rotate(180deg); /* Girar la flecha cuando la respuesta está abierta */
+    transform: rotate(180deg);
 }
 .questions{
     background-color: #ecbfc0;
@@ -801,11 +797,11 @@ body {
 
 
     .about__main {
-        grid-template-columns: 1fr; /* Solo una columna */
+        grid-template-columns: 1fr; 
     }
 
     .about__icons {
-        grid-column: 1 / -1; /* Asegura que cada elemento ocupe toda la fila */
+        grid-column: 1 / -1;
     }
 
     .knowledge__container{
@@ -915,23 +911,23 @@ body {
       margin-right: 0;
     }
   }
-  /* Media query para dispositivos pequeños */
+
 @media (max-width: 768px) {
     .hero {
-        height: 100vh; /* En móviles queremos que siga ocupando toda la pantalla */
+        height: 100vh; 
     }
 
     .hero::before {
-        background-size: cover; /* Mantiene la imagen de fondo en cover */
-        background-position: center center; /* Asegura que la imagen se quede centrada */
-        clip-path: none; /* Elimina el clip-path en dispositivos pequeños */
+        background-size: cover; 
+        background-position: center center; 
+        clip-path: none; 
     }
     .icono {
         display: none;
 }
-/* Media query para pantallas grandes */
+
 @media (min-width: 769px) {
     .hero::before {
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); /* Mantiene el recorte en pantallas grandes */
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); 
     }
 }}
