@@ -10,7 +10,7 @@ body {
 /* menu */
 button.open-menu,
 button.close-menu {
-  display: none;
+  display: none !important;
 }
 .open-menu,
 .close-menu {
