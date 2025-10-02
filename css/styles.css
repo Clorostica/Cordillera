@@ -503,32 +503,32 @@ button.close-menu {
     transition: background-image 0.3s ease;
 }
 .gift1 {
-    background-image: url('/img/f1.jpg');
+    background-image: url('https://clorostica.github.io/Cordillera/img/f1.jpg');
 }
 
 .gift1:hover {
-    background-image: url('/img/f4.jpg');
+    background-image: url('https://clorostica.github.io/Cordillera/img/f4.jpg');
 }
 .gift2 {
-    background-image: url('/img/4.avif');
+    background-image: url('https://clorostica.github.io/Cordillera/img/4.avif');
 }
 
 .gift2:hover {
-    background-image: url('/img/5.avif');
+    background-image: url('https://clorostica.github.io/Cordillera/img/5.avif');
 }
 .gift3 {
-    background-image: url('/img/6.avif'); 
+    background-image: url('https://clorostica.github.io/Cordillera/img/6.avif'); 
 }
 
 .gift3:hover {
-    background-image: url('/img/7.avif'); 
+    background-image: url('https://clorostica.github.io/Cordillera/img/7.avif'); 
 }
 .gift4 {
-    background-image: url('/img/8.avif');
+    background-image: url('https://clorostica.github.io/Cordillera/img/8.avif');
 }
 
 .gift4:hover {
-    background-image: url('/img/9.avif'); 
+    background-image: url('https://clorostica.github.io/Cordillera/img/9.avif'); 
 }
   .about_title {
     font-size: 1rem;
@@ -819,7 +819,7 @@ padding: 30px;
     height: 200px;
 }
     .about__dcnt{
-        text-align: left;
+    text-align: left;
     }
   .aboutmain {
     grid-template-columns: 1fr;
