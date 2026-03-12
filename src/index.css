@@ -864,29 +864,70 @@ button {
 @media (max-width: 768px) {
   .creative-slide {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 220px;
+    grid-template-rows: 260px auto;
     min-height: unset;
   }
+  /* Image goes on top on mobile */
   .creative-slide__img-frame {
+    order: -1;
     margin: 0;
     border-radius: 0;
   }
   .creative-slide__panel {
-    padding: 36px 24px 28px;
+    padding: 28px 24px 36px;
+  }
+  .creative-slide__accent-line {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 3px;
+    top: 0;
   }
   .creative-slide__deco-num {
-    font-size: 4rem;
-    left: 24px;
+    display: none;
+  }
+  .creative-slide__title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+  .creative-slide__desc {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .creative-nav {
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .creative-nav__arrows {
     margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .creative-nav__arrow {
+    width: 52px;
+    height: 52px;
+    font-size: 1.4rem;
+  }
+  .creative-nav__dot {
+    height: 5px;
   }
 }
 
 @media (max-width: 480px) {
+  .creative-slide {
+    grid-template-rows: 220px auto;
+  }
+  .creative-slide__panel {
+    padding: 24px 20px 32px;
+  }
   .creative-slide__btns {
     flex-direction: column;
     gap: 8px;
+  }
+  .creative-slide__btns .btn-primary,
+  .creative-slide__btns .btn-outline {
+    text-align: center;
+    justify-content: center;
   }
 }
 
