@@ -675,6 +675,15 @@ button {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  height: auto;
+}
+
+.creative-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.creative-swiper .swiper-slide {
+  height: auto;
 }
 
 .creative-slide {
@@ -863,71 +872,87 @@ button {
 
 @media (max-width: 768px) {
   .creative-slide {
-    grid-template-columns: 1fr;
-    grid-template-rows: 260px auto;
+    display: flex;
+    flex-direction: column;
     min-height: unset;
   }
-  /* Image goes on top on mobile */
+
   .creative-slide__img-frame {
     order: -1;
+    width: 100%;
+    height: 240px;
+    flex-shrink: 0;
     margin: 0;
     border-radius: 0;
+    box-shadow: none;
   }
+
   .creative-slide__panel {
+    flex: 1;
     padding: 28px 24px 36px;
+    justify-content: flex-start;
   }
+
   .creative-slide__accent-line {
+    left: 0;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 48px;
-    height: 3px;
-    top: 0;
+    bottom: auto;
+    transform: none;
+    width: 3px;
+    height: 100%;
   }
+
   .creative-slide__deco-num {
     display: none;
   }
+
   .creative-slide__title {
-    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    font-size: clamp(1.6rem, 6vw, 2rem);
   }
+
   .creative-slide__desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     margin-bottom: 20px;
   }
+
+  .creative-slide__btns {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .creative-nav {
     flex-wrap: wrap;
     gap: 10px;
   }
+
   .creative-nav__arrows {
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
+    margin-left: auto;
   }
+
   .creative-nav__arrow {
-    width: 52px;
-    height: 52px;
-    font-size: 1.4rem;
-  }
-  .creative-nav__dot {
-    height: 5px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .creative-slide {
-    grid-template-rows: 220px auto;
+  .creative-slide__img-frame {
+    height: 200px;
   }
+
   .creative-slide__panel {
-    padding: 24px 20px 32px;
+    padding: 22px 18px 28px;
   }
+
   .creative-slide__btns {
     flex-direction: column;
-    gap: 8px;
   }
-  .creative-slide__btns .btn-primary,
-  .creative-slide__btns .btn-outline {
-    text-align: center;
-    justify-content: center;
+
+  .creative-nav__arrows {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
   }
 }
 
